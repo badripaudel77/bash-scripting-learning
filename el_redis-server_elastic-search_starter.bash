@@ -2,14 +2,10 @@
 
 echo "Checking and starting redis-server and elastic-search using bash script file"
 
-if echo PING | redis-cli | grep -q PONG; then
-  echo "Congratulations ! 'Redis Server' is already running ..."
-else
-  echo "Hold On, 'Redis Server' is starting up"
-  # redis-server & if you want to run in the background
-  redis-server
-  echo "Congratulations once again ! 'Redis Server' started running at background..."
-fi
+echo "Hold On, 'Redis Server' is starting up"
+# redis-server & if you want to run in the background
+redis-server
+echo "Congratulations ! 'Redis Server' started running ..."
 
 
 # Let's check for elastic search
@@ -25,7 +21,7 @@ else
   #./bin/elasticsearch &
   ./bin/elasticsearch
 
-  echo "Hurray, 'Elasticsearch' is running at background..."
+  echo "Hurray, 'Elasticsearch' is running at ..."
 fi
 
 
