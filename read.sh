@@ -8,3 +8,8 @@ echo "Hello $username"
 
 # Do operations create file for that username ... 
 touch "${username}_file.sh"
+echo "file ${username}_file.sh created "
+ 
+rm -r "${username}_file.sh"
+
+echo "file ${username}_file.sh deleted "
